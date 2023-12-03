@@ -211,7 +211,7 @@ function main() {
         configure_vmware_workstation
         move_default_picture
 	update_config
-        #updateLastKernel
+        updateLastKernel
 }
 
 main
