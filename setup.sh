@@ -69,13 +69,11 @@ sudo pacman -S \
         arc-gtk-theme \
         php \
         composer \
-        php-apache \
         php-apcu \
         php-cgi \
         php-dblib \
         php-embed \
         php-enchant \
-        php-fpm \
         php-gd \
         php-geoip \
         php-grpc \
@@ -184,7 +182,6 @@ function maildev_docker() {
 
 function configure_vmware_workstation() {
         yay -Syyu vmware-workstation --needed --noconfirm
-        sudo modprobe -a vmw_vmci vmmon
 }
 
 function updateLastKernel() {
