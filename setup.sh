@@ -95,6 +95,7 @@ sudo pacman -S \
         php-xsl \
         xdebug \
 	gnome-disk-utility \
+	nautilus \
         --needed --noconfirm
 
 function configuration_yay() {
