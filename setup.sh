@@ -67,6 +67,33 @@ sudo pacman -S \
         base-devel \
         dkms \
         arc-gtk-theme \
+        php \
+        composer \
+        php-apache \
+        php-apcu \
+        php-cgi \
+        php-dblib \
+        php-embed \
+        php-enchant \
+        php-fpm \
+        php-gd \
+        php-geoip \
+        php-grpc \
+        php-igbinary \
+        php-imagick \
+        php-memcache \
+        php-memcached \
+        php-mongodb \
+        php-odbc \
+        php-pgsql \
+        php-phpdbg \
+        php-pspell \
+        php-snmp \
+        php-sodium \
+        php-sqlite \
+        php-tidy \
+        php-xsl \
+        xdebug \
         --needed --noconfirm
 
 function configuration_yay() {
