@@ -94,6 +94,7 @@ sudo pacman -S \
         php-tidy \
         php-xsl \
         xdebug \
+	gnome-disk-utility \
         --needed --noconfirm
 
 function configuration_yay() {
