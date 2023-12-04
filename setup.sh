@@ -62,9 +62,6 @@ sudo pacman -S \
         polybar \
         spotify-launcher \
         bitwarden \
-        virtualbox \
-        virtualbox-guest-utils \
-        virtualbox-guest-iso \
         base-devel \
         dkms \
         arc-gtk-theme \
