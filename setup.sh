@@ -64,6 +64,7 @@ sudo pacman -S \
         bitwarden \
         virtualbox \
         virtualbox-guest-utils \
+        virtualbox-guest-iso \
         base-devel \
         dkms \
         arc-gtk-theme \
