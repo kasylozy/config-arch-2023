@@ -92,6 +92,7 @@ sudo pacman -S \
         php-tidy \
         php-xsl \
         xdebug \
+	gnome-screenshot \
 	gnome-disk-utility \
 	nautilus \
         --needed --noconfirm
