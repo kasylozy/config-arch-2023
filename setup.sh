@@ -180,9 +180,6 @@ function maildev_docker() {
 }
 
 function configure_vmware_workstation() {
- 	# Install Dependencies
-  	sudo pacman -S fuse2 gtkmm linux-headers pcsclite libcanberra --noconfirm
-   	yay -S --noconfirm --needed ncurses5-compat-libs
         yay -Syyu vmware-workstation --needed --noconfirm
 }
 
