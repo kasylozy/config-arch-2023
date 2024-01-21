@@ -179,18 +179,6 @@ function maildev_docker() {
         fi
 }
 
-function configure_vmware_workstation() {
- 	# Install Dependencies
-  	sudo pacman -S fuse2 gtkmm linux-headers pcsclite libcanberra --noconfirm
-   	yay -S --noconfirm --needed ncurses5-compat-libs
-        yay -Syyu vmware-workstation --needed --noconfirm
-
- 	# Enable service
-        sudo modprobe -a vmw_vmci vmmon
-        sudo systemctl enable --now vmware-networks.service
-        sudo systemctl enable --now vmware-usbarbitrator.service
-}
-
 function updateLastKernel() {
         sudo pacman -S $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-headers"}' ORS=' ') --noconfirm
 }
@@ -211,7 +199,6 @@ function main() {
         configure_postfix
         configure_ohMyZsh
         maildev_docker
-        configure_vmware_workstation
         move_default_picture
 	update_config
         updateLastKernel
