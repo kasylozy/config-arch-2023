@@ -179,10 +179,6 @@ function maildev_docker() {
         fi
 }
 
-function install_virtualbox () {
-	sudo pacman -S --noconfirm --needed extra/libvirt extra/phpvirtualbox extra/virtualbox extra/virtualbox-ext-vnc extra/virtualbox-guest-iso extra/virtualbox-guest-utils extra/virtualbox-host-dkms extra/virtualbox-sdk
-}
-
 function updateLastKernel() {
         sudo pacman -S $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-headers"}' ORS=' ') --noconfirm
 }
@@ -205,7 +201,6 @@ function main() {
         maildev_docker
         move_default_picture
 	update_config
-	install_virtualbox
         updateLastKernel
 }
 
